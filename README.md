@@ -1,6 +1,6 @@
 # EBU6305
 ## Group Number:2021EBU6305G19
-## Project Title:
+## Project Title:A website about West Lake Longjing
 ## Members:
 * Jingtong Yao,2019213270,190899967,jp2019213270@qmul.ac.uk
 * Ziyu Huang,2019213302,190897974,jp2019213302@qmul.ac.uk
