@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <style>
+    .introduce_item {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+    .introduce_item1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    opacity: 0;
+}
+.introduce_item1.scrolled{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    opacity: 1;
+}
+.introduce_item2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    opacity: 0;
+}
+.introduce_item2.scrolled{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    opacity: 1;
+}
+.introduce_item3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    opacity: 0;
+}
+.introduce_item3.scrolled{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    opacity: 1;
+}
+.introduce_item4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    opacity: 0;
+}
+.introduce_item4.scrolled{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    opacity: 1;
+}
+.introduce_item5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    opacity: 0;
+}
+.introduce_item5.scrolled{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    opacity: 1;
+}
+
+@keyframes key {
+  0% {
+      opacity: 0;
+  }
+
+  50% {
+      opacity: .5;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+    </style>
+    <link rel="stylesheet" href="value function.css">
+</head>
+<body>
+    <script>
+        function addEvent(obj,type,fn){undefined
+     if(obj.attachEvent){ //ie
+     obj.attachEvent('on'+type,function(){undefined
+     fn.call(obj);
+     })
+     }else{undefined
+     obj.addEventListener(type,fn,false);
+     }
+    }
+    </script>
+    <div class="home">
+        <div class="content">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo"> 
+            </div>  
+            <div class="stars"></div>
+            <img class="bgc" src="img/p2.jpg" width="100%" alt="p2">
+            <h3 class="title">Value Function</h3>   
+                         
+            <img class="icon" src="https://img.lccyj.ltd/img/down.png" alt="icon">
+            <div class='ribbon'>
+                <a href='./index.html'><span>Home</span></a>
+                <a href='./history.html'><span>History</span></a>
+                <a href='./tasting.html'><span>Tasting</span></a>
+                <a href='./production.html'><span>Production</span></a>
+                <a href='./learnMore.html'><span>Learn more</span></a>
+            </div>
+
+        </div>
+       
+        <div class="introduce">
+            <div class="container">
+                <nav>
+                      <ul class="mcd-menu">
+                          <li>
+                              <a href="value function.html" >
+                                  
+                                 <strong>value function</strong>
+                                  
+                              </a>
+                          </li>
+                          
+                        <li>
+                            <a href="storage method.html">
+                                
+                                <strong>storage method</strong>
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="criterion.html" class="active">
+                                
+                                <strong>criterion</strong>
+                                
+                            </a>
+                          </li>
+                      </ul>
+                  </nav>
+            </div>
+            <div class="introduce_item1">
+                <script>
+          addEvent(window,'scroll',function(){undefined
+            var box = document.querySelector(".introduce_item1");
+          //用js检测鼠标滚轮距离顶部位置来给div添加动画
+                           //检测鼠标滚轮距离顶部位置
+                           var top = document.documentElement.scrollTop || document.div.scrollTop;
+              console.log(top);
+              //要设置到DIV显示出来时给div添加动画 也可以设置一个数值只要保证div出来给它加动画即可
+              if(top > (box.offsetTop - box.offsetHeight)) {
+                 box.classList.add('scrolled');
+                  box.style.animation = "key .99s linear 1" //添加动画  
+                  
+              }
+});
+
+                </script>
+                <img class="introduce_item_img" src="img/p5.jpg" alt="p5">
+                <span class="introduce_item_title">
+                    Longjing Tea is refreshing, arouses fluid and quenches thirst, and reduces neutral 
+                    fat and cholesterol in blood.It has the functions of anti-oxidation, anti-sudden change, 
+                    anti-tumor, reducing the content of cholesterol and low density ester protein in blood, 
+                    inhibiting the rise of blood pressure, inhibiting platelet agglutination, antibacterial, 
+                    anti-product allergy and so on.<br><br>
+                </span>
+
+            </div>
+            <div class="introduce_item2">
+                <script>
+
+          //用js检测鼠标滚轮距离顶部位置来给div添加动画
+          addEvent(window,'scroll',function(){undefined
+            var box = document.querySelector(".introduce_item2");
+                           //检测鼠标滚轮距离顶部位置
+                           var top = document.documentElement.scrollTop || document.div.scrollTop;
+              console.log(top);
+              //要设置到DIV显示出来时给div添加动画 也可以设置一个数值只要保证div出来给它加动画即可
+              if(top > (box.offsetTop - box.offsetHeight)) {
+                 box.classList.add('scrolled');
+                  box.style.animation = "key .99s linear 1" //添加动画  
+                  
+              }
+});
+                </script>
+                <span class="introduce_item_titles">
+                    Longjing Tea has the effect of eliminating odor and helping digestion.In halitosis, 
+                    enzymes form a compound called methyl mercaptan that produces a bad smell. Longjing 
+                    Tea can inhibit the activity of this enzyme, play a role in eliminating bad breath, 
+                    and also can stimulate the secretion of more digestive juices,which is conducive to the 
+                    decomposition of starch, protein and fat, aid digestion.<br><br>
+                </span>
+                <img class="introduce_item_img" src="img/p6.jpg" alt="p6">
+            </div>
+            <div class="introduce_item3">
+                <script>
+                    //用js检测鼠标滚轮距离顶部位置来给div添加动画
+                    addEvent(window,'scroll',function(){undefined
+                      var box = document.querySelector(".introduce_item3");
+                        //检测鼠标滚轮距离顶部位置
+                        var top = document.documentElement.scrollTop || document.div.scrollTop;
+                        console.log(top);
+                        //要设置到DIV显示出来时给div添加动画 也可以设置一个数值只要保证div出来给它加动画即可
+                        if(top > (box.offsetTop - box.offsetHeight)) {
+                           box.classList.add('scrolled');
+                            box.style.animation = "key .99s linear 1" //添加动画  
+                            
+                        }
+          });
+          
+                </script>
+                <img class="introduce_item_img1" src="img/p7.jpg" alt="p7">
+                <span class="introduce_item_title">
+                    Longjing Tea can help people lose weight and keep beautiful. Longjing Tea contains theine, inositol,
+                     folic acid, pantothenic acid and aromatic substances and other compounds, which can regulate 
+                     fat metabolism. Tea polyphenols and vitamin C can lower cholesterol and blood lipids, so drinking 
+                     Longjing tea can help people lose weight.<br><br>
+                </span>
+            </div>
+            <div class="introduce_item4">
+                <script>
+                    //用js检测鼠标滚轮距离顶部位置来给div添加动画
+                    addEvent(window,'scroll',function(){undefined
+                      var box = document.querySelector(".introduce_item4");
+                        //检测鼠标滚轮距离顶部位置
+                        var top = document.documentElement.scrollTop || document.div.scrollTop;
+                        console.log(top);
+                        //要设置到DIV显示出来时给div添加动画 也可以设置一个数值只要保证div出来给它加动画即可
+                        if(top > (box.offsetTop - box.offsetHeight)) {
+                           box.classList.add('scrolled');
+                            box.style.animation = "key .99s linear 1" //添加动画          
+                        }
+          });
+                </script>
+                <span class="introduce_item_titles">
+                    Longjing Tea can be antibacterial. The tea polyphenols and tannic acid in Longjing Tea 
+                    act on bacteria, which can coagulate their proteins and kill them.Skin sores, ulcers flow 
+                    pus, trauma broken skin, with strong tea to wash the affected place, which make 
+                    anti-inflammatory bactericidal effect.Oral inflammation, ulceration, sore throat, with 
+                    tea to treat, also have certain curative effect.<br><br><br><br>
+                </span>
+                <img class="introduce_item_img2" src="img/p8.jpg" alt="p8">
+            </div>
+            <div class="introduce_item5">
+                <script>
+                    //用js检测鼠标滚轮距离顶部位置来给div添加动画
+                    addEvent(window,'scroll',function(){undefined
+                      var box = document.querySelector(".introduce_item5");
+                        //检测鼠标滚轮距离顶部位置
+                        var top = document.documentElement.scrollTop || document.div.scrollTop;
+                        console.log(top);
+                        //要设置到DIV显示出来时给div添加动画 也可以设置一个数值只要保证div出来给它加动画即可
+                        if(top > (box.offsetTop - box.offsetHeight)) {
+                           box.classList.add('scrolled');
+                            box.style.animation = "key .99s linear 1" //添加动画          
+                        }
+          });
+                </script>
+
+            </div>
+        </div>     
+    </div>
+</body>
+</html>
