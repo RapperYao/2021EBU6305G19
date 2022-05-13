@@ -1,0 +1,388 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background:url(xihu6.png);
+	color:white;
+	background-size: cover;
+	background-attachment: fixed;
+	font-size: 16px;
+}
+
+  #box {
+	background-color: rgba(255,255,255,0.3);
+
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	color: gray;
+	border-radius: 10px;
+	border: 1px solid;
+	padding: 15px;
+	height: 200px;
+	width: 700px;
+	position: relative;
+	top:150px;
+	margin:auto;
+  }
+.ribbon {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 300px;
+    top: 50px;
+    margin: auto;
+}
+
+.ribbon:after,
+.ribbon:before {
+    margin-top: 0.5em;
+    content: "";
+    display: flex;
+    ;
+    border: 1.5em solid #fff;
+}
+
+.ribbon:after {
+    border-right-color: transparent;
+}
+
+.ribbon:before {
+    border-left-color: transparent;
+}
+
+.ribbon a:link,
+.ribbon a:visited {
+    color: #000;
+    text-decoration: none;
+    height: 3.5em;
+    overflow: hidden;
+}
+
+.ribbon span {
+    background: #fff;
+    display: inline-block;
+    line-height: 3em;
+    padding: 0 1.5em;
+    margin-top: 0.5em;
+    position: relative;
+    -webkit-transition: background-color 0.2s, margin-top 0.2s;
+    /* Saf3.2+, Chrome */
+    -moz-transition: background-color 0.2s, margin-top 0.2s;
+    /* FF4+ */
+    -ms-transition: background-color 0.2s, margin-top 0.2s;
+    /* IE10 */
+    -o-transition: background-color 0.2s, margin-top 0.2s;
+    /* Opera 10.5+ */
+    transition: background-color 0.2s, margin-top 0.2s;
+}
+
+.ribbon a:hover span {
+    background: #FFD204;
+    margin-top: 0;
+}
+
+.ribbon span:before {
+    content: "";
+    position: absolute;
+    top: 3em;
+    left: 0;
+    border-right: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+}
+
+.ribbon span:after {
+    content: "";
+    position: absolute;
+    top: 3em;
+    right: 0;
+    border-left: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid rgb(255, 255, 255);
+}
+
+a {
+	color: #ffffcc;
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+	a:hover,
+	a.selected {
+		color: #ffcc00;
+	}
+
+h1,h2,h4,h5,h6 {
+	text-align: center;
+	color: #ccc;
+	text-shadow: #000 1px 1px 2px;
+	margin-bottom: 5px;
+}
+	h1 {
+		font-size: 18px;
+	}
+	h2 {
+		font-size: 14px;
+	}
+.sociales {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+	#timeline {
+		width: 500px;
+		height: 600px;
+		overflow: hidden;
+		position: relative;
+		margin: 200px auto;
+		background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/dot.gif') 3px top repeat-y;
+	}
+		#dates {
+			width: 100px;
+			height: 600px;
+			overflow: hidden;
+			float: left;
+		}
+			#dates li {
+				list-style: none;
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				font-size: 24px;
+				padding-left: 10px;
+				background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/biggerdot.png') left center no-repeat;
+			}
+				#dates a {
+					line-height: 38px;
+					padding-bottom: 10px;
+				}
+				#dates .selected {
+			        font-size: 38px;
+				}
+		
+		#issues {
+			width: 400px;
+			height: 600px;
+			overflow: hidden;
+			float: left;
+		}	
+			#issues li {
+				max-width: 300px;
+				width: 400px;
+				height: 600px;
+				list-style: none;
+         text-align: center; 
+
+			}
+				#issues li.selected img {
+					-webkit-transform: scale(1.1,1.1);
+					-moz-transform: scale(1.1,1.1);
+				    -o-transform: scale(1.1,1.1);
+				    -ms-transform: scale(1.1,1.1);
+				    transform: scale(1.1,1.1);
+				}
+				#issues li img {
+					float: left;
+            width: 200px; 
+					margin: 10px 30px 10px 50px;
+					-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */   
+					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);/* IE 6 & 7 */      
+					zoom: 1;
+					-webkit-transition: all 2s ease-in-out;
+					-moz-transition: all 2s ease-in-out;
+					-o-transition: all 2s ease-in-out;
+					-ms-transition: all 2s ease-in-out; 
+					transition: all 2s ease-in-out;
+					-webkit-transform: scale(0.7,0.7);
+					-moz-transform: scale(0.7,0.7);
+				    -o-transform: scale(0.7,0.7);
+				    -ms-transform: scale(0.7,0.7);
+				    transform: scale(0.7,0.7);
+				}
+				#issues li h1 {
+					color: #ffcc00;
+					font-size: 48px;
+					text-align: center;
+					text-shadow: #000 1px 1px 2px;
+				}
+				#issues li p {
+					font-size: 14px;
+					margin: 10px 20px;
+					font-weight: normal;
+					line-height: 22px;
+					text-shadow: #000 1px 1px 2px;
+				}
+		
+		#grad_top,
+		#grad_bottom {
+			width: 500px;
+			height: 80px;
+			position: absolute;
+		}
+			#grad_top {
+		        top: 0;
+			}
+			#grad_bottom {
+		        bottom: 0;
+			}
+		
+		#next,
+		#prev {
+			position: absolute;
+			left: 45%;  left: 55%;
+			font-size: 70px;
+			width: 38px;
+			height: 22px;
+			background-position: 0 -44px;
+			background-repeat: no-repeat;
+			text-indent: -9999px;
+			overflow: hidden;
+		}
+			#next:hover,
+			#prev:hover {
+				background-position:  0 0;
+			}
+			#next {
+				bottom: 0;
+				background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/next_v.png');
+			}
+			#prev {
+				top: 0;
+				background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/prev_v.png');
+			}
+				#next.disabled,
+				#prev.disabled {
+					opacity: 0.2;
+				}
+@media screen and (max-width:1200px){
+	#timeline {
+		width: 750px;
+		height: 900px;
+		overflow: hidden;
+		position: relative;
+		margin: 300px auto;
+		background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/dot.gif') 3px top repeat-y;
+	}
+		#dates {
+			width: 150px;
+			height: 900px;
+			overflow: hidden;
+			float: left;
+		}
+			#dates li {
+				list-style: none;
+				width: 150px;
+				height: 150px;
+				line-height: 150px;
+				font-size: 36px;
+				padding-left: 15px;
+				background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/biggerdot.png') left center no-repeat;
+			}
+				#dates a {
+					line-height: 57px;
+					padding-bottom: 15px;
+				}
+				#dates .selected {
+			        font-size: 57px;
+				}
+		
+		#issues {
+			width: 600px;
+			height: 900px;
+			overflow: hidden;
+			float: left;
+		}	
+			#issues li {
+				max-width: 450px;
+				width: 600px;
+				height: 900px;
+				list-style: none;
+         text-align: center; 
+
+			}
+				#issues li.selected img {
+					-webkit-transform: scale(1.1,1.1);
+					-moz-transform: scale(1.1,1.1);
+				    -o-transform: scale(1.1,1.1);
+				    -ms-transform: scale(1.1,1.1);
+				    transform: scale(1.1,1.1);
+				}
+				#issues li img {
+					float: left;
+            width: 300px; 
+					margin: 15px 45px 15px 75px;
+					-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */   
+					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);/* IE 6 & 7 */      
+					zoom: 1;
+					-webkit-transition: all 2s ease-in-out;
+					-moz-transition: all 2s ease-in-out;
+					-o-transition: all 2s ease-in-out;
+					-ms-transition: all 2s ease-in-out; 
+					transition: all 2s ease-in-out;
+					-webkit-transform: scale(0.7,0.7);
+					-moz-transform: scale(0.7,0.7);
+				    -o-transform: scale(0.7,0.7);
+				    -ms-transform: scale(0.7,0.7);
+				    transform: scale(0.7,0.7);
+				}
+				#issues li h1 {
+					color: #ffcc00;
+					font-size: 48px;
+					text-align: center;
+					text-shadow: #000 1.5px 1px 2px;
+				}
+				#issues li p {
+					font-size: 21px;
+					margin: 15px 30px;
+					font-weight: normal;
+					line-height: 33px;
+					text-shadow: #000 1.5px 1.5px 3px;
+				}
+		
+		#grad_top,
+		#grad_bottom {
+			width: 750px;
+			height: 120px;
+			position: absolute;
+		}
+			#grad_top {
+		        top: 0;
+			}
+			#grad_bottom {
+		        bottom: 0;
+			}
+		
+		#next,
+		#prev {
+			position: absolute;
+			left: 45%;  left: 55%;
+			font-size: 105px;
+			width: 57px;
+			height: 33px;
+			background-position: 0 -66px;
+			background-repeat: no-repeat;
+			text-indent: -9999px;
+			overflow: hidden;
+		}
+			#next:hover,
+			#prev:hover {
+				background-position:  0 0;
+			}
+			#next {
+				bottom: 0;
+				background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/next_v.png');
+			}
+			#prev {
+				top: 0;
+				background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/prev_v.png');
+			}
+				#next.disabled,
+				#prev.disabled {
+					opacity: 0.2;
+				}
+
+}

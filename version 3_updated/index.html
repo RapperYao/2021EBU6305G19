@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+    <title>West Lake Longjing Tea</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="home">
+        <div class="content">
+            <div class="stars"></div>
+            <img class="bgc" src="img/pic1.jpg" width="100%" alt="">
+            <h3 class="title">West lake Longjing</h3>   
+                         
+            <img class="icon" src="https://img.lccyj.ltd/img/down.png" alt="">
+                <div class='ribbon'>
+                    <a href='./index.html'><span>Home</span></a>
+                    <a href='./history.html'><span>History</span></a>
+                    <a href='./tasting.html'><span>Tasting</span></a>
+                    <a href='./production.html'><span>Production</span></a>
+                    <a href='./learnMore.html'><span>Learn more</span></a>
+                </div>
+                
+        </div>
+        <div class="icons">
+            <div class="icons_items">
+                <img id="button1" class="icons_items_imgs" src="img/pic2.jpg" alt="">
+                <a>Classification</a>
+            </div>
+            <div class="icons_items">
+                <img id="button2" class="icons_items_imgs" src="img/pic3.jpeg" alt="">
+                <a>Quality Characteristics</a>
+            </div>
+            <div class="icons_items">
+                <img id="button3" class="icons_items_imgs" src="img/pic4.webp" alt="">
+                <a>Geography and Climate</a>
+            </div>
+            <div class="icons_items">
+                <img id="button4" class="icons_items_imgs" src="img/pic5.webp" alt="">
+                <a>Growing Region</a>
+            </div>
+        </div>
+        <div class="introduce">
+            <div class="introduce_item" id="C1">
+                <img class="introduce_item_img" src="img/pic2.jpg" alt="">
+                <span class="introduce_item_title">
+                    There are several famous categories in West Lake Longjing, such as 
+                    "Shifeng Longjing", "Meiwu Longjing", "Yunqi Longjing" and 
+                    "Hupao Longjing". "Shifeng Longjing" produced in Longjing
+                    Village, Lion Peak, which is known as "brown rice color". 
+                    "Meiwu Longjing" produced in yunqi, Meijiawu area,which has 
+                    a straight and flat appearance and a bright green color.
+                    There are more than 30 brands of West Lake Longjing Tea.<br><br>
+                </span>
+
+            </div>
+            <div class="introduce_item" id="C2">
+                <img class="introduce_item_img" src="img/pic3.jpeg" alt="">
+                <span class="introduce_item_title">
+                    West Lake Longjing tea is famous for four fabulous features, 
+                    which are " green color, fragrant smell, sweet taste and beautiful shape".
+                    The premium spring West Lake Longjing has spiky seedlings, 
+                    longer buds than leaves and no fluff on the body surface. 
+                    When spoiled, the color of the tea is bright and the smell is fresh. 
+                    With the decline of the levels of Longjing tea, the color turns to darker, 
+                    the size turns to bigger, the surface turns to rougher, the taste turns to richer, 
+                    the leaf bottom turns from bud to leaf.<br><br>
+                    Longjing tea in summer and autumn is dark green and large, 
+                    there is no fluff on the surface, the taste is rougher than the spring tea and slightly astringent.
+                </span>
+                
+            </div>
+            <div class="introduce_item" id="C3">
+                <img class="introduce_item_img" src="img/pic4.webp" alt="">
+                <span class="introduce_item_title">
+                    The West Lake Longjing is native to the mountains in Zhejiang Hangzhou West Lake, 
+                    where has a mild climate, abundant rainfall and full light. 
+                    The soil here is fertile and slightly acidic with good drainage, 
+                    luxuriant forests and streams. The annual average temperature is 16 ℃ 
+                    and the annual precipitation is about 1500 mm. The superior natural conditions 
+                    in favour of the growth of the tea trees and the germination of the buds. 
+                    The picking time is around 30 batches of all year, which is the most in all types of tea.<br><br>
+                </span>
+            </div>
+            <div class="introduce_item" id="C4">
+                <img class="introduce_item_img" src="img/pic5.webp" alt="">
+                <span class="introduce_item_title">
+                    The growing region of West Lake Longjing is divided into primary region and secondary region. 
+                    Primary region including "Lion, Dragon, Cloud, Tiger, Plum" five core regions, 
+                    secondary region is in addition to the primary region. "Lion" is produced near the Shifeng area, 
+                    "Dragon" is produced near the Longjing area, “Cloud” is produced near the Yunqi area, 
+                    “Tiger” is produced near the Hupao area, “Plum” is produced near the Meijiawu area.<br><br>
+                </span>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        function heightToTop(ele){
+            let bridge = ele;
+            let root = document.body;
+            let height = 0;
+            do{
+                height += bridge.offsetTop;
+                bridge = bridge.offsetParent;
+            }while(bridge !== root)
+        
+            return height;
+        }
+
+        button1.addEventListener('click',function(){
+            window.scrollTo({
+                top:heightToTop(C1),
+                behavior:'smooth'
+            })
+        })
+        button2.addEventListener('click',function(){
+            window.scrollTo({
+                top:heightToTop(C2),
+                behavior:'smooth'
+            })
+        })
+        button3.addEventListener('click',function(){
+            window.scrollTo({
+                top:heightToTop(C3),
+                behavior:'smooth'
+            })
+        })
+        button4.addEventListener('click',function(){
+            window.scrollTo({
+                top:heightToTop(C4),
+                behavior:'smooth'
+            })
+        })
+    </script>
+</body>
+
+
+</html>
